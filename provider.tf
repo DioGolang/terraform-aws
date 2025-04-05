@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "eksbucket-terraform-state-02"
+    bucket = "eksbucket-terraform-state-03"
     key    = "terraform/dev/terraform.tfstate"
     region = "us-west-2"
   }
