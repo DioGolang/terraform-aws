@@ -6,12 +6,12 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "eksbucket-terraform-state"
+    bucket = "eksbucket-terraform-state-02"
     key    = "terraform/dev/terraform.tfstate"
-    region = "us-east-1"
+    region = "us-west-2"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
